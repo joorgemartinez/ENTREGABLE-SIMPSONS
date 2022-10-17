@@ -47,4 +47,5 @@ while True:
   df_gen.to_csv('general.csv', mode= 'a', index = False, header = False)
   df_homer.to_csv('homer.csv', mode= 'a',index = False, header = False)
   df_lisa.to_csv('lisa.csv', mode = 'a', index = False, header = False)
-  time.sleep(5)
+  time.sleep(1)
+  
