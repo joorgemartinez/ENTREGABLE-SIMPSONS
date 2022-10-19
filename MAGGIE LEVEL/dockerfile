@@ -1,6 +1,6 @@
 FROM python:3.9.12
 
-COPY ./entregable_1.py /app/
+COPY ./entregable_simpsons.py /app/
 COPY ./requirements.txt /app/
 
 WORKDIR /app/
@@ -9,5 +9,5 @@ RUN mkdir Homer
 RUN mkdir Lisa
 RUN pip install -r requirements.txt
 
-CMD ["python","entregable_1.py"]
+CMD ["python","entregable_simpsons.py"]
 
