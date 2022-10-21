@@ -11,6 +11,7 @@ import errno
 general_list = []
 homer_list = []
 lisa_list = []
+cuenta_palabras = {}
 
 while True:
   URL = 'https://thesimpsonsquoteapi.glitch.me/quotes'
