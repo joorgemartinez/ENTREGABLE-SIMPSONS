@@ -60,7 +60,7 @@ while True:
   #Con la función frase.split() separamos cada palabra y se guarda en lista
   palabras = frase.split()
   
-  #Mediante el bucle vamos actualizando el valor del diccionario
+  #Mediante el bucle for vamos actualizando el valor del diccionario
   for palabra in palabras:
     value = 0
 
@@ -74,5 +74,5 @@ while True:
   with open ('/Users/jorgemartinezcanet/Documents/GitHub/ENTREGABLE-SIMPSONS/LISA LEVEL/ContadorPalabras.txt', 'w') as cuentapalabras:
       for clave, valor in cuenta_palabras.items():
         cuentapalabras.write(f"\n{clave}: {valor}")
-
+        
   time.sleep (0)
