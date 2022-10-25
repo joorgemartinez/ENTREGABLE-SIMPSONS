@@ -1,6 +1,5 @@
 
 import requests
-import json
 import time
 import csv
 
@@ -30,19 +29,19 @@ while True:
 
 
     dict_1 = {"personaje": personaje, "frase": frase}
-    with open('general.csv', 'a') as f: 
+    with open('General/General.csv', 'a') as f: 
         a = csv.DictWriter(f, dict_1.keys())
         a.writerow(dict_1)
     
     if personaje == "Lisa Simpson":
         dict_2 = {"personaje": personaje, "frase": frase}
-        with open('lisa.csv', 'a') as h: 
+        with open('Lisa/Lisa.csv', 'a') as h: 
             a = csv.DictWriter(h, dict_2.keys())
             a.writerow(dict_2)
     
     if personaje == "Homer Simpson":
         dict_3 = {"personaje": personaje, "frase": frase}
-        with open ('homer.csv', 'a') as g:
+        with open ('Homer/Homer.csv', 'a') as g:
             a = csv.DictWriter (g, dict_3.keys())
             a.writerow(dict_3)  
         

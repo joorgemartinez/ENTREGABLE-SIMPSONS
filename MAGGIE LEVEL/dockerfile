@@ -9,5 +9,5 @@ RUN mkdir Homer
 RUN mkdir Lisa
 RUN pip install -r requirements.txt
 
-CMD ["python","entregable_simpsons.py"]
+CMD ["python3","entregable_simpsons.py"]
 
