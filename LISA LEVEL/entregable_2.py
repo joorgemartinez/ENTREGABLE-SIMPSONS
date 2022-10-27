@@ -75,4 +75,4 @@ while True:
       for clave, valor in cuenta_palabras.items():
         cuentapalabras.write(f"\n{clave}: {valor}")
         
-  time.sleep (0)
+  time.sleep (30)
