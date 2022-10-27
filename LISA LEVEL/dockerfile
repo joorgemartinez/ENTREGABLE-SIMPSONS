@@ -1,6 +1,6 @@
 FROM python:3.9.12
 
-COPY ./entregable_2.py /app/
+COPY ./entregable_Lisa.py /app/
 COPY ./requirements.txt /app/
 
 WORKDIR /app/
@@ -9,4 +9,4 @@ RUN mkdir Personajes
 
 RUN pip install -r requirements.txt
 
-CMD ["python3","entregable_2.py"]
+CMD ["python3","entregable_Lisa.py"]
