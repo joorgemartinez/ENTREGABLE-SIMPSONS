@@ -27,6 +27,7 @@ while True:
     else:
         general_list.append((personaje,frase))
 
+    #Guardamos los datos en diccionarios y a partir de ahí creamos los archivos .csv
 
     dict_1 = {"personaje": personaje, "frase": frase}
     with open('General/General.csv', 'a') as f: 
