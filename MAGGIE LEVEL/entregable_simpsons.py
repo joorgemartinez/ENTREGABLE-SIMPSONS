@@ -35,7 +35,7 @@ while True:
             a = csv.DictWriter (g, dict_3.keys())
             a.writerow(dict_3)  
         
-    time.sleep (0)
+    time.sleep (30)
 
 
   
