@@ -27,11 +27,11 @@ while True:
     
   #Creamos carpetas para cada cliente en el que se introducirá su imagen.
   try:
-      os.mkdir(f"/Users/jorgemartinezcanet/Documents/GitHub/ENTREGABLE-SIMPSONS/LISA LEVEL/{personaje}")
-      imagen_local = f"/Users/jorgemartinezcanet/Documents/GitHub/ENTREGABLE-SIMPSONS/LISA LEVEL/{personaje}/{personaje}.png"
+      os.mkdir(f"Personajes/{personaje}")
+      imagen_local = f"Personajes/{personaje}/{personaje}.png"
 
       dict_General = {"personaje": personaje, "frase": frase}
-      with open(f"/Users/jorgemartinezcanet/Documents/GitHub/ENTREGABLE-SIMPSONS/LISA LEVEL/general.csv", 'a') as f: 
+      with open(f"General/General.csv", 'a') as f: 
         a = csv.DictWriter(f, dict_General.keys())
         a.writerow(dict_General)
 
@@ -39,13 +39,13 @@ while True:
       #Cuando el personaje es Lisa o Homer, introducimos también el archivo .csv dentro de la carpeta.
       if personaje == "Lisa Simpson":
         dict_Lisa = {"personaje": personaje, "frase": frase}
-        with open(f"/Users/jorgemartinezcanet/Documents/GitHub/ENTREGABLE-SIMPSONS/LISA LEVEL/{personaje}/{personaje}.csv", 'a') as h: 
+        with open(f"Personajes/{personaje}/{personaje}.csv", 'a') as h: 
           a = csv.DictWriter(h, dict_Lisa.keys())
           a.writerow(dict_Lisa)
 
       elif personaje == "Homer Simpson":
         dict_Homer = {"personaje": personaje, "frase": frase}
-        with open (f"/Users/jorgemartinezcanet/Documents/GitHub/ENTREGABLE-SIMPSONS/LISA LEVEL/{personaje}/{personaje}.csv", 'a') as g:
+        with open (f"Personajes/{personaje}/{personaje}.csv", 'a') as g:
           a = csv.DictWriter (g, dict_Homer.keys())
           a.writerow(dict_Homer)
 
@@ -71,7 +71,7 @@ while True:
     cuenta_palabras[palabra] += value
 
   #Creación del archivo .txt en el que se introducirá el conteo de las palabras
-  with open ('/Users/jorgemartinezcanet/Documents/GitHub/ENTREGABLE-SIMPSONS/LISA LEVEL/ContadorPalabras.txt', 'w') as cuentapalabras:
+  with open ('ContadorPalabras.txt', 'w') as cuentapalabras:
       for clave, valor in cuenta_palabras.items():
         cuentapalabras.write(f"\n{clave}: {valor}")
         

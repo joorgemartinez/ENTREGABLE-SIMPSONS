@@ -1,0 +1,12 @@
+FROM python:3.9.12
+
+COPY ./entregable_2.py /app/
+COPY ./requirements.txt /app/
+
+WORKDIR /app/
+RUN mkdir General
+RUN mkdir Personajes
+
+RUN pip install -r requirements.txt
+
+CMD ["python3","entregable_2.py"]
